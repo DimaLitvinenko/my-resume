@@ -1,0 +1,283 @@
+a {
+    text-decoration: none;
+} 
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, span {
+  margin: 0;
+}
+
+body {
+    background-color: #F5F7FA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 6px 6px 20px rgba(197, 6, 6, 0.246);
+    justify-content: flex-end;
+    border-radius: 20px;
+}
+
+/*================== Main content section ===================*/
+.main-content-section {
+    padding: 60px 100px;
+    font-style: normal;
+}
+.main-content-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/*================== About me section ==================*/
+.about-me-section{
+    margin-bottom: 40px;
+}
+.about-me-profession{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000;
+    margin: 0 0 10px 0;
+}
+.my-name {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px; 
+    color: #000;
+    margin-bottom: 25px;
+}
+.about-me-desription{
+    width: 460px;
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    border-top: 1px solid #FB6D3A;
+    border-bottom: 1px solid #FB6D3A;
+}
+
+/*================= My Projects section =====================*/
+.my-projects-section{
+    margin-bottom: 50px;
+}
+.my-projects-list {
+    padding-left: 18px;
+}
+.my-projects-item, 
+.my-projects-bracket {
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+.my-projects-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-left: 5px;
+}
+.my-projects-link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.my-projects-link:hover {
+    color:#FB6D3A;
+    font-weight: bold;
+}
+
+
+/*============== My Work Expiriense ===============*/
+.work-expiriense-title, 
+.university-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.my-work-expiriense-company {
+    color: #FB6D3A;
+}
+.my-work-expiriense-section {
+    width: 460px;
+    margin-bottom: 45px;
+}
+.expiriense-period {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin: 0 0 15px 0;
+}
+.work-expiriense-divider {
+    color:#FB6D3A;
+}
+.my-work-expiriense-dyties {
+    padding: 0 0 0 18px;
+}
+.my-work-expiriense-dyti {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+.my-work-expiriense-company-block {
+    margin: 0 0 15px 0;
+}
+
+/*================ My Education ================*/
+.university-title{
+    color: #FB6D3A;
+    font-size: 16px;
+}
+.subject-title,
+.university-title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+}
+.subject-title{
+    margin-bottom: 5px;
+}
+
+/*=============== Sidebar section ===============*/
+.sidebar-section {
+    background: content-box radial-gradient(crimson, skyblue);
+    width: 370px;
+    padding: 0 0;
+    color: #FFFFFF;
+    font-style: normal;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.sidebar_img {
+    border-top-left-radius: 20px;
+}
+.contacts-section, 
+.tech-skills-section, 
+.soft-skills-section {
+    margin: 30px 0 0 50px;
+}
+.sidebar-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+/*================= Contacts section ==================*/
+.contacts-section-link {
+    font-weight: normal;
+    color: #FFFFFF;
+    opacity: 0.5;
+    transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.contacts-section-link:hover {
+    color: black;
+    font-weight: bold;
+}
+.contacts-section-type {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.contacts-section-type, 
+.contacts-section-link {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*================= Tech & Soft skills ================*/
+.tech-skills-list, 
+.soft-skills-list {
+    padding: 0 0 0 17px;
+}
+.tech-skills-list-item, 
+.soft-skills-list-item { 
+    color: #FB6D3A;
+    margin-left: 5px;
+}
+.tech-skills-list-item-text,
+.soft-skills-list-item-text {
+    color:#fff;
+}
+
+/*============== Social Links ===================*/
+/*
+.social-links-section {
+
+} 
+.socialIcons {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 70px;
+  text-align: center;
+}
+.socialIcons li {
+  display: inline-block;
+  margin: auto 10px;
+}
+.socialIcons li a {
+  text-align: center;
+  display: inline-block;
+  font-size: 4rem;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  color: #F1DABF;
+  transition: all ease 0.5s;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black;
+  transform: rotateX(-30deg);
+}
+li a:hover {
+  transform: rotateX(-30deg) translateY(-20px);
+}
+li a:hover.facebook {
+  color: #365899;
+  text-shadow: 0px 0px 0px #365899,0px 1px 2px #2f4d86,0px 2px 2px #294273,0px 3px 2px #223760,0px 4px 2px #1b2d4e,0px 5px 2px #15223b,0px 6px 2px #0e1728,0px 7px 2px #070c15,0px 8px 2px #010102,0px 9px 2px black,0px 10px 2px black;
+}
+li a:hover.twitter {
+  color: #1DA1F2;
+  text-shadow: 0px 0px 0px #1DA1F2,0px 1px 2px #0d95e8,0px 2px 2px #0c85d0,0px 3px 2px #0b76b8,0px 4px 2px #0967a0,0px 5px 2px #085788,0px 6px 2px #064870,0px 7px 2px #053857,0px 8px 2px #04293f,0px 9px 2px #021927,0px 10px 2px #010a0f;
+}
+li a:hover.instagram {
+  color: #C32AA3;
+  text-shadow: 0px 0px 0px #C32AA3,0px 1px 2px #ae2591,0px 2px 2px #992180,0px 3px 2px #841c6e,0px 4px 2px #6f185d,0px 5px 2px #5a134b,0px 6px 2px #450f3a,0px 7px 2px #300a28,0px 8px 2px #1b0617,0px 9px 2px #060105,0px 10px 2px black;
+}
+li a:hover.googlePlus {
+  color: #DB4437;
+  text-shadow: 0px 0px 0px #DB4437,0px 1px 2px #d33426,0px 2px 2px #bd2e22,0px 3px 2px #a7291e,0px 4px 2px #92241a,0px 5px 2px #7c1e16,0px 6px 2px #671912,0px 7px 2px #51140f,0px 8px 2px #3b0f0b,0px 9px 2px #260907,0px 10px 2px #100403;
+}
+li a:hover.youtube {
+  color: #FF0000;
+  text-shadow: 0px 0px 0px #FF0000,0px 1px 2px #e60000,0px 2px 2px #c00,0px 3px 2px #b30000,0px 4px 2px #900,0px 5px 2px maroon,0px 6px 2px #600,0px 7px 2px #4d0000,0px 8px 2px #300,0px 9px 2px #1a0000,0px 10px 2px black;
+} */
