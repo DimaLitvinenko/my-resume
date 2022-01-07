@@ -36,7 +36,7 @@ body {
 
 /*================== Main content section ===================*/
 .main-content-section {
-  padding: 60px 100px;
+  padding: 50px 70px;
   font-style: normal;
 }
 .main-content-title {
@@ -118,6 +118,7 @@ body {
   color: #595959;
 }
 /*============== My Work Expiriense ===============*/
+
 .work-expiriense-title,
 .university-title {
   font-weight: bold;
@@ -156,6 +157,7 @@ body {
 }
 
 /*================ My Education ================*/
+
 .university-title {
   color: #fb6d3a;
   font-size: 16px;
@@ -171,6 +173,7 @@ body {
 }
 
 /*=============== Sidebar section ===============*/
+
 .sidebar-section {
   background: content-box radial-gradient(crimson, skyblue);
   width: 370px;
@@ -185,7 +188,9 @@ body {
 }
 .contacts-section,
 .tech-skills-section,
-.soft-skills-section {
+.soft-skills-section,
+.language-skills-section, 
+.link-section {
   margin: 30px 0 0 50px;
 }
 .sidebar-title {
@@ -196,6 +201,7 @@ body {
 }
 
 /*================= Contacts ==================*/
+
 .contacts-section-link {
   font-weight: normal;
   color: #ffffff;
@@ -218,49 +224,69 @@ body {
 }
 
 /*================= Tech & Soft skills ================*/
+
 .tech-skills-list,
-.soft-skills-list {
+.soft-skills-list,
+.language-skills-list {
   padding: 0 0 0 17px;
 }
 .tech-skills-list-item,
-.soft-skills-list-item {
+.soft-skills-list-item,
+.language-skills-list-item {
   color: #fb6d3a;
   margin-left: 5px;
 }
 .tech-skills-list-item-text,
-.soft-skills-list-item-text {
+.soft-skills-list-item-text,
+.language-skills-list-item-text {
   color: #fff;
 }
 
-/*================ Language skills ===================*/
+/*================= Language skills ===================*/
+
 .language-skills-list {
   list-style: none;
+}
+.language-skills-list-item {
   font-weight: bold;
 }
-
-.certificate-link{
+.language-skills-list-item-text{
+  font-weight: normal;
+}
+.english-link {
   font-size: 16px;
   font-weight: normal;
   color: #ffffff;
   opacity: 0.5;
+  text-decoration: 4px underline #fb6d3a;
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    font-size 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    text-decoration 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  
 }
-.certificate-link:hover {
+
+.english-link:hover {
   color: black;
   font-weight: bold;
   font-size: 17px;
+  text-decoration: 4px underline #fff;
 }
 
 .lang-item-text {
   color: #fff;
 }
-/*=========================================== KET PAGE =========================================*/
+
+
+/*==========================================< CERTIFICATE PAGE >=========================================*/
+.certificate-page-section {
+  margin-bottom: 20px;
+}
 
 .back-btn {
   font-weight: bold;
   position: absolute;
-  top: 5px;
+  top: -6px;
   left: 0;
   background-color: #fff;
   color: black;
@@ -275,25 +301,24 @@ body {
   background-color:#fb6d3a;
   color: #fff;
 }
+
 /* .image-section {
-
 } */
-
 .image-ket {
   border: solid #fb6d3a;
 }
 
 .ket-page-title {
   text-align: end;
+  font-size: 20px;
+  margin: 0;
 }
 
 /*================ Language skills ===================*/
-.language-item {
-  font-weight: normal;
-  color: #ffffff;
-  text-decoration: underline;
-  opacity: 0.5;
-  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  cursor: not-allowed;
+
+.language-skills-section{
+  margin-bottom: 20px;
 }
+
+/* .language-skills-list {
+} */
