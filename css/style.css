@@ -23,6 +23,7 @@ body {
 }
 
 .main-section {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
@@ -48,6 +49,7 @@ body {
 
 /*================== About me section ==================*/
 .about-me-section {
+  position: relative;
   margin-bottom: 30px;
 }
 .about-me-profession {
@@ -193,7 +195,7 @@ body {
   margin-bottom: 10px;
 }
 
-/*================= Contacts section ==================*/
+/*================= Contacts ==================*/
 .contacts-section-link {
   font-weight: normal;
   color: #ffffff;
@@ -230,61 +232,68 @@ body {
   color: #fff;
 }
 
-/*============== Social Links ===================*/
-/*
-.social-links-section {
+/*================ Language skills ===================*/
+.language-skills-list {
+  list-style: none;
+  font-weight: bold;
+}
 
-} 
-.socialIcons {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: inline-block;
-  position: fixed;
-  top: 0;
-  bottom: 0;
+.certificate-link{
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.5;
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.certificate-link:hover {
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.lang-item-text {
+  color: #fff;
+}
+/*=========================================== KET PAGE =========================================*/
+
+.back-btn {
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
   left: 0;
-  right: 0;
-  margin: auto;
-  height: 70px;
-  text-align: center;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #fb6d3a;
+  border-radius: 10px;
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+  background-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.socialIcons li {
-  display: inline-block;
-  margin: auto 10px;
+.back-btn:hover {
+  background-color:#fb6d3a;
+  color: #fff;
 }
-.socialIcons li a {
-  text-align: center;
-  display: inline-block;
-  font-size: 4rem;
-  height: 100px;
-  width: 100px;
-  line-height: 100px;
-  color: #F1DABF;
-  transition: all ease 0.5s;
-  text-shadow: 0px 0px 1px black, 0px 0px 1px black;
-  transform: rotateX(-30deg);
-}
-li a:hover {
-  transform: rotateX(-30deg) translateY(-20px);
-}
-li a:hover.facebook {
-  color: #365899;
-  text-shadow: 0px 0px 0px #365899,0px 1px 2px #2f4d86,0px 2px 2px #294273,0px 3px 2px #223760,0px 4px 2px #1b2d4e,0px 5px 2px #15223b,0px 6px 2px #0e1728,0px 7px 2px #070c15,0px 8px 2px #010102,0px 9px 2px black,0px 10px 2px black;
-}
-li a:hover.twitter {
-  color: #1DA1F2;
-  text-shadow: 0px 0px 0px #1DA1F2,0px 1px 2px #0d95e8,0px 2px 2px #0c85d0,0px 3px 2px #0b76b8,0px 4px 2px #0967a0,0px 5px 2px #085788,0px 6px 2px #064870,0px 7px 2px #053857,0px 8px 2px #04293f,0px 9px 2px #021927,0px 10px 2px #010a0f;
-}
-li a:hover.instagram {
-  color: #C32AA3;
-  text-shadow: 0px 0px 0px #C32AA3,0px 1px 2px #ae2591,0px 2px 2px #992180,0px 3px 2px #841c6e,0px 4px 2px #6f185d,0px 5px 2px #5a134b,0px 6px 2px #450f3a,0px 7px 2px #300a28,0px 8px 2px #1b0617,0px 9px 2px #060105,0px 10px 2px black;
-}
-li a:hover.googlePlus {
-  color: #DB4437;
-  text-shadow: 0px 0px 0px #DB4437,0px 1px 2px #d33426,0px 2px 2px #bd2e22,0px 3px 2px #a7291e,0px 4px 2px #92241a,0px 5px 2px #7c1e16,0px 6px 2px #671912,0px 7px 2px #51140f,0px 8px 2px #3b0f0b,0px 9px 2px #260907,0px 10px 2px #100403;
-}
-li a:hover.youtube {
-  color: #FF0000;
-  text-shadow: 0px 0px 0px #FF0000,0px 1px 2px #e60000,0px 2px 2px #c00,0px 3px 2px #b30000,0px 4px 2px #900,0px 5px 2px maroon,0px 6px 2px #600,0px 7px 2px #4d0000,0px 8px 2px #300,0px 9px 2px #1a0000,0px 10px 2px black;
+/* .image-section {
+
 } */
+
+.image-ket {
+  border: solid #fb6d3a;
+}
+
+.ket-page-title {
+  text-align: end;
+}
+
+/*================ Language skills ===================*/
+.language-item {
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: underline;
+  opacity: 0.5;
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: not-allowed;
+}
