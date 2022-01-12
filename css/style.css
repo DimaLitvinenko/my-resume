@@ -36,7 +36,7 @@ body {
 
 /*================== Main content section ===================*/
 .main-content-section {
-  padding: 50px 70px;
+  padding: 50px 90px;
   font-style: normal;
 }
 .main-content-title {
@@ -93,7 +93,7 @@ body {
 }
 .my-projects-item:not(:last-child) {
   border-bottom: 1px dotted #fb6d3a;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .my-projects-link {
@@ -126,6 +126,9 @@ body {
   line-height: 20px;
   margin-bottom: 5px;
 }
+.my-work-expiriense-company-block {
+    padding-left: 5px;
+}
 .my-work-expiriense-company {
   color: #fb6d3a;
 }
@@ -133,12 +136,18 @@ body {
   width: 460px;
   margin-bottom: 45px;
 }
+
+.subject-title,
+.expiriense-period {
+  padding-left: 5px;
+}
+
 .expiriense-period {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #a8a8a8;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px  0;
 }
 .work-expiriense-divider {
   color: #fb6d3a;
@@ -157,7 +166,9 @@ body {
 }
 
 /*================ My Education ================*/
-
+.my-education {
+  margin-bottom: 40px;
+}
 .university-title {
   color: #fb6d3a;
   font-size: 16px;
@@ -189,15 +200,14 @@ body {
 .contacts-section,
 .tech-skills-section,
 .soft-skills-section,
-.language-skills-section, 
-.link-section {
-  margin: 30px 0 0 50px;
+.language-skills-section {
+  margin: 30px 0 0 40px;
 }
 .sidebar-title {
   font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 7px;
 }
 
 /*================= Contacts ==================*/
@@ -213,14 +223,15 @@ body {
   color: black;
   font-weight: bold;
 }
-.contacts-section-type {
+/* .contacts-section-type {
   font-weight: bold;
   margin-right: 5px;
-}
+} */
 .contacts-section-type,
 .contacts-section-link {
   font-size: 14px;
   line-height: 24px;
+  text-decoration:underline;
 }
 
 /*================= Tech & Soft skills ================*/
@@ -320,5 +331,18 @@ body {
   margin-bottom: 20px;
 }
 
-/* .language-skills-list {
-} */
+.language-skills-list {
+  padding-left: 6px;
+}
+.language-skills-list-item {
+  margin-left: 0;
+  font-size: 13px;
+  
+  color: #ff4806;
+}
+.language-skills-list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.language-skills-list-item-text {
+  color: #fff;
+}
