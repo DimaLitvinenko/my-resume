@@ -29,7 +29,7 @@ body {
   width: 1200px;
   background-color: #fff;
   margin: 0 auto;
-  box-shadow: 6px 6px 20px rgba(197, 6, 6, 0.246);
+  /* box-shadow: 6px 6px 20px rgba(197, 6, 6, 0.246); */
   justify-content: flex-end;
   border-radius: 20px;
 }
@@ -40,19 +40,27 @@ body {
   font-style: normal;
 }
 .main-content-title {
+  text-transform: uppercase;
   font-weight: bold;
+  /* text-align: center; */
   font-size: 22px;
   line-height: 27px;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /*================== About me section ==================*/
+.about-me-title {
+  padding-top: 20px;
+  /* border-top: 1px solid #59595988; */
+}
 .about-me-section {
+  /* background-color: rgb(146, 178, 191); */
   position: relative;
   margin-bottom: 30px;
 }
 .about-me-profession {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
   line-height: 17px;
@@ -60,6 +68,7 @@ body {
   margin: 0 0 10px 0;
 }
 .my-name {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 45px;
   line-height: 55px;
@@ -67,48 +76,70 @@ body {
   margin-bottom: 25px;
 }
 .about-me-desription {
-  width: 460px;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  border-top: 1px solid #fb6d3a;
-  border-bottom: 1px solid #fb6d3a;
+  /* border-bottom: 1px solid #59595988; */
 }
 
 /*================= My Projects section =====================*/
 .my-projects-section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .my-projects-list {
-  padding-left: 18px;
+  
   list-style: none;
 }
 .my-projects-item {
+  padding-left: 18px;
+  padding-bottom: 20px;
   color: #000;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  
 }
+
 .my-projects-item:not(:last-child) {
-  border-bottom: 1px dotted #fb6d3a;
   margin-bottom: 20px;
+  border-bottom: 1px dotted rgb(146, 178, 191);
 }
 
 .my-projects-link {
+  display: block;
+  margin-bottom: 5px;
   font-weight: normal;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
+  color: rgb(85, 139, 148);
+  text-decoration: underline;
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    text-decoration 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.my-projects-link:hover {
+  color: rgb(146, 178, 191); 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-link-code {
+  display: block;
+  /* text-align: right; */
   color: #595959;
   text-decoration: underline;
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    text-decoration 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.my-projects-link:hover {
-  color: #fb6d3a;
+.project-link-code:hover,
+.project-link-code:focus {
+  color: rgb(146, 178, 191);
   font-weight: bold;
+  text-decoration: none;
 }
 
 .my-projects-text {
@@ -118,6 +149,11 @@ body {
   color: #595959;
 }
 /*============== My Work Expiriense ===============*/
+.my-work-expiriense-section {
+  /* border-bottom: 1px solid #59595988; */
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
 
 .work-expiriense-title,
 .university-title {
@@ -128,13 +164,10 @@ body {
 }
 .my-work-expiriense-company-block {
     padding-left: 5px;
+    margin: 0 0 15px 0;
 }
 .my-work-expiriense-company {
-  color: #fb6d3a;
-}
-.my-work-expiriense-section {
-  width: 460px;
-  margin-bottom: 45px;
+  color: rgb(85, 139, 148);
 }
 
 .subject-title,
@@ -147,10 +180,10 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #a8a8a8;
-  margin: 0 0 10px  0;
+  margin: 0;
 }
 .work-expiriense-divider {
-  color: #fb6d3a;
+  color: rgb(85, 139, 148);
 }
 .my-work-expiriense-dyties {
   padding: 0 0 0 18px;
@@ -161,16 +194,16 @@ body {
   line-height: 24px;
   color: #595959;
 }
-.my-work-expiriense-company-block {
-  margin: 0 0 15px 0;
-}
+
 
 /*================ My Education ================*/
 .my-education {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  /* border-bottom: 1px solid #59595988; */
+  /* padding-bottom: 10px; */
 }
 .university-title {
-  color: #fb6d3a;
+  color: rgb(85, 139, 148);
   font-size: 16px;
 }
 .subject-title,
@@ -182,11 +215,14 @@ body {
 .subject-title {
   margin-bottom: 5px;
 }
+.last-item{
+  margin-bottom: 10px;
+}
 
 /*=============== Sidebar section ===============*/
 
 .sidebar-section {
-  background: content-box radial-gradient(crimson, skyblue);
+  background: radial-gradient(rgb(85, 139, 148), rgb(146, 178, 191));
   width: 370px;
   padding: 0 0;
   color: #ffffff;
@@ -204,35 +240,38 @@ body {
   margin: 30px 0 0 40px;
 }
 .sidebar-title {
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 24px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 /*================= Contacts ==================*/
-
+.contacts-section-type,
+.contacts-section-link {
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
 .contacts-section-link {
   font-weight: normal;
-  color: #ffffff;
-  opacity: 0.5;
+  color: #fff;
+  opacity: 1;
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-decoration 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .contacts-section-link:hover {
   color: black;
-  font-weight: bold;
+  opacity: 0.75;
+  text-decoration: underline;
 }
 /* .contacts-section-type {
   font-weight: bold;
   margin-right: 5px;
 } */
-.contacts-section-type,
-.contacts-section-link {
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration:underline;
-}
+
 
 /*================= Tech & Soft skills ================*/
 
@@ -244,7 +283,7 @@ body {
 .tech-skills-list-item,
 .soft-skills-list-item,
 .language-skills-list-item {
-  color: #fb6d3a;
+  color: #5a5958fd;
   margin-left: 5px;
 }
 .tech-skills-list-item-text,
@@ -337,12 +376,12 @@ body {
 .language-skills-list-item {
   margin-left: 0;
   font-size: 13px;
-  
-  color: #ff4806;
+  color: #fff;
 }
 .language-skills-list-item:not(:last-child) {
   margin-bottom: 5px;
 }
 .language-skills-list-item-text {
   color: #fff;
+  opacity: 0.9;
 }
