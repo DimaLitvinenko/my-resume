@@ -43,42 +43,44 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   /* text-align: center; */
-  font-size: 22px;
+  font-size: 23px;
   line-height: 27px;
   color: #000000;
   margin-bottom: 15px;
 }
 
 /*================== About me section ==================*/
-.about-me-title {
-  padding-top: 20px;
-  /* border-top: 1px solid #59595988; */
-}
+/* .about-me-title {
+   padding-top: 20px; 
+   border-top: 1px solid #59595988; 
+} */
 .about-me-section {
+  margin-bottom: 40px;
   /* background-color: rgb(146, 178, 191); */
   position: relative;
-  margin-bottom: 30px;
+  
 }
 .about-me-profession {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 17px;
   color: #000;
   margin: 0 0 10px 0;
 }
 .my-name {
+  margin-bottom: 55px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 46px;
   line-height: 55px;
   color: #000;
-  margin-bottom: 25px;
 }
 .about-me-desription {
-  padding: 0 0 20px 0;
+  padding: 0;
   font-weight: normal;
-  font-size: 14px;
+  text-align: justify;
+  font-size: 15px;
   line-height: 24px;
   color: #595959;
   /* border-bottom: 1px solid #59595988; */
@@ -89,7 +91,6 @@ body {
   margin-bottom: 30px;
 }
 .my-projects-list {
-  
   list-style: none;
 }
 .my-projects-item {
@@ -97,11 +98,9 @@ body {
   padding-bottom: 20px;
   color: #000;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
-  
 }
-
 .my-projects-item:not(:last-child) {
   margin-bottom: 20px;
   border-bottom: 1px dotted rgb(146, 178, 191);
@@ -111,11 +110,11 @@ body {
   display: block;
   margin-bottom: 5px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 24px;
   color: rgb(85, 139, 148);
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
     font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
     text-decoration 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -123,14 +122,13 @@ body {
 .my-projects-link:hover {
   color: rgb(146, 178, 191); 
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .project-link-code {
   display: block;
-  /* text-align: right; */
   color: #595959;
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
     font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
     text-decoration 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -139,32 +137,38 @@ body {
 .project-link-code:focus {
   color: rgb(146, 178, 191);
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .my-projects-text {
+  margin-bottom: 5px;
   font-weight: normal;
-  font-size: 14px;
+  text-align: justify;
+  font-size: 15px;
   line-height: 24px;
   color: #595959;
 }
-/*============== My Work Expiriense ===============*/
+
+/*============================ My Work Expiriense ===================================*/
 .my-work-expiriense-section {
   /* border-bottom: 1px solid #59595988; */
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   margin-bottom: 40px;
 }
 
 .work-expiriense-title,
 .university-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 20px;
   margin-bottom: 5px;
 }
 .my-work-expiriense-company-block {
-    padding-left: 5px;
-    margin: 0 0 15px 0;
+  padding-left: 5px;
+}
+
+.my-work-expiriense-company-block:not(:last-child) {
+  margin-bottom: 10px;
 }
 .my-work-expiriense-company {
   color: rgb(85, 139, 148);
@@ -177,7 +181,7 @@ body {
 
 .expiriense-period {
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 15px;
   color: #a8a8a8;
   margin: 0;
@@ -190,7 +194,7 @@ body {
 }
 .my-work-expiriense-dyti {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #595959;
 }
@@ -198,25 +202,22 @@ body {
 
 /*================ My Education ================*/
 .my-education {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   /* border-bottom: 1px solid #59595988; */
   /* padding-bottom: 10px; */
 }
 .university-title {
   color: rgb(85, 139, 148);
-  font-size: 16px;
+  font-size: 17px;
 }
 .subject-title,
 .university-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 17px;
 }
 .subject-title {
   margin-bottom: 5px;
-}
-.last-item{
-  margin-bottom: 10px;
 }
 
 /*=============== Sidebar section ===============*/
@@ -242,7 +243,7 @@ body {
 .sidebar-title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 24px;
   margin-bottom: 10px;
 }
@@ -250,7 +251,7 @@ body {
 /*================= Contacts ==================*/
 .contacts-section-type,
 .contacts-section-link {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   text-decoration: none;
 }
@@ -304,7 +305,7 @@ body {
   font-weight: normal;
 }
 .english-link {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
   color: #ffffff;
   opacity: 0.5;
@@ -313,7 +314,6 @@ body {
     font-weight 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
     font-size 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
     text-decoration 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  
 }
 
 .english-link:hover {
@@ -327,8 +327,9 @@ body {
   color: #fff;
 }
 
-
 /*==========================================< CERTIFICATE PAGE >=========================================*/
+
+/*
 .certificate-page-section {
   margin-bottom: 20px;
 }
@@ -352,8 +353,8 @@ body {
   color: #fff;
 }
 
-/* .image-section {
-} */
+.image-section {
+} 
 .image-ket {
   border: solid #fb6d3a;
 }
@@ -363,9 +364,11 @@ body {
   font-size: 20px;
   margin: 0;
 }
+*/
 
-/*================ Language skills ===================*/
+/* ================ Language skills =================== */
 
+/*
 .language-skills-section{
   margin-bottom: 20px;
 }
@@ -385,3 +388,4 @@ body {
   color: #fff;
   opacity: 0.9;
 }
+*/
